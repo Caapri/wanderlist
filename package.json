@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tabler/icons-vue": "^3.44.0",
     "leaflet": "^1.9.4",
     "pinia": "^3.0.4",
     "vue": "^3.5.34",

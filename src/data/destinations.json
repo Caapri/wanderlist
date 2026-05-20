@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "name": "Kyoto",
+        "country": "Japan",
+        "description": "Kyoto, once the capital of Japan, is a city on the island of Honshu. It's famous for its classical Buddhist temples, as well as gardens, imperial palaces, Shinto shrines and traditional wooden houses. It's also known for its formal traditions such as kaiseki dining, consisting of multiple courses of precise dishes, and geisha female entertainers often found in the Gion district.",
+        "rating": 4.8,
+        "coordinates": {
+            "latitude": 35.0116,
+            "longitude": 135.7681
+        },
+        "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800"
+    },
+    {
+        "id": 2,
+        "name": "Machu Picchu",
+        "country": "Peru",
+        "description": "Machu Picchu is an ancient Incan city set high in the Andes Mountains in Peru, above the Urubamba River valley. Built in the 15th century and later abandoned, it's renowned for its sophisticated dry-stone walls that fuse huge blocks without the use of mortar, intriguing buildings that play on astronomical alignments and panoramic views. Its exact former use remains a mystery.",
+        "rating": 4.9,
+        "coordinates": {
+            "latitude": -13.1631,
+            "longitude": -72.5450
+        },
+        "image": "https://images.unsplash.com/photo-1543385426-191664295b58?w=800"
+    },
+    {
+        "id": 3,
+        "name": "Santorini",
+        "country": "Greece",
+        "description": "Santorini is one of the Cyclades islands in the Aegean Sea. It was devastated by a volcanic eruption in the 16th century BC, forever shaping its rugged landscape. The whitewashed, cubiform houses of its 2 principal towns, Fira and Oia, cling to cliffs above an underwater caldera (crater). They overlook the sea, small islands to the west and beaches made up of black, red and white lava pebbles.",
+        "rating": 4.7,
+        "coordinates": {
+            "latitude": 36.3932,
+            "longitude": 25.4615
+        },
+        "image": "https://images.unsplash.com/photo-1580502304784-8985b7eb7260?w=800"
+    },
+    {
+        "id": 4,
+        "name": "Paris",
+        "country": "France",
+        "description": "Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy and culture. Its 19th-century cityscape is crisscrossed by wide boulevards and the River Seine. Beyond such landmarks as the Eiffel Tower and the 12th-century, Gothic Notre-Dame cathedral, the city is known for its cafe culture and designer boutiques along the Rue du Faubourg Saint-Honoré.",
+        "rating": 4.6,
+        "coordinates": {
+            "latitude": 48.8566,
+            "longitude": 2.3522
+        },
+        "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800"
+    },
+    {
+        "id": 5,
+        "name": "New York City",
+        "country": "USA",
+        "description": "New York City comprises 5 boroughs sitting where the Hudson River meets the Atlantic Ocean. At its core is Manhattan, a densely populated borough that’s among the world’s major commercial, financial and cultural centers. Its iconic sites include skyscrapers such as the Empire State Building and sprawling Central Park. Broadway theater is staged in neon-lit Times Square.",
+        "rating": 4.5,
+        "coordinates": {
+            "latitude": 40.7128,
+            "longitude": -74.0060
+        },
+        "image": "https://images.unsplash.com/photo-1496588152823-86ff7695e68f?w=800"
+    },
+    {
+        "id": 6,
+        "name": "Sydney",
+        "country": "Australia",
+        "description": "Sydney, capital of New South Wales and one of Australia's largest cities, is best known for its harbourfront Sydney Opera House, with a distinctive sail-like design. Massive Darling Harbour and the smaller Circular Quay port are hubs of waterside life, with the arched Harbour Bridge and esteemed Royal Botanic Garden nearby. Sydney Tower’s outdoor platform, the Skywalk, offers 360-degree views of the city and suburbs.",
+        "rating": 4.4,
+        "coordinates": {
+            "latitude": -33.8688,
+            "longitude": 151.2093
+        },
+        "image": "https://images.unsplash.com/photo-1624138784614-87fd1b6528f8?w=800"
+    },
+    {
+        "id": 7,
+        "name": "Barcelona",
+        "country": "Spain",
+        "description": "Barcelona, the cosmopolitan capital of Spain’s Catalonia region, is known for its art and architecture. The fantastical Sagrada Família church and other modernist landmarks designed by Antoni Gaudí dot the city. Museu Picasso and Fundació Joan Miró feature modern art by their namesakes. City history museum MUHBA, includes Roman archaeological sites. Barcelona is also famous for its beaches.",
+        "rating": 4.3,
+        "coordinates": {
+            "latitude": 41.3851,
+            "longitude": 2.1734
+        },
+        "image": "https://images.unsplash.com/photo-1529551739587-e242c564f727?w=800"
+    }
+]
