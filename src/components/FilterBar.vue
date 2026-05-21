@@ -37,12 +37,17 @@ const filters = [
   {
     label: "Europa",
     icon: IconMapPin,
-    value: "Europa",
+    value: "Europe",
   },
   {
     label: "América",
     icon: IconMapPin,
-    value: "América",
+    value: "America",
+  },
+  {
+    label: "Australia",
+    icon: IconMapPin,
+    value: "Australia",
   },
   {
     label: "África",
