@@ -5,8 +5,8 @@
       Wanderlist
     </div>
     <nav>
-      <router-link to="/">Explore</router-link>
-      <router-link to="/map">Map</router-link>
+      <router-link to="/">Explorar</router-link>
+      <router-link to="/map">Mapa</router-link>
     </nav>
   </header>
 </template>
@@ -20,7 +20,6 @@ import { IconMap2 } from "@tabler/icons-vue";
   display: flex;
   align-items: center;
   padding: 1rem;
-  background-color: var(--bg-color);
   justify-content: space-between;
   border-bottom: 1px solid var(--border-color);
 
