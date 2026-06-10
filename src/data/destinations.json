@@ -89,5 +89,18 @@
       "longitude": 2.1734
     },
     "image": "https://images.unsplash.com/photo-1529551739587-e242c564f727?w=800"
+  },
+  {
+    "id": 8,
+    "name": "Casablanca",
+    "country": "Morocco",
+    "continent": "Africa",
+    "description": "Casablanca is a city in western Morocco, bordering the Atlantic Ocean. It’s the country’s largest city and economic hub. The city is known for its French colonial architecture, vibrant culture and bustling markets. Key landmarks include the Hassan II Mosque, one of the largest mosques in the world, and the Old Medina, a maze of narrow streets filled with shops and cafes.",
+    "rating": 3.8,
+    "coordinates": {
+      "latitude": 33.5731,
+      "longitude": -7.5898
+    },
+    "image": "https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?w=800"
   }
 ]

@@ -7,8 +7,13 @@
     <ul>
       <li v-for="(filter, index) in filters" :key="index">
         <button
-          :class="{ active: activeFilter === filter.value }"
-          @click="activeFilter = filter.value"
+          :class="{
+            active:
+              filter.type === 'rating'
+                ? onlyTopRated
+                : continent === filter.value && !onlyTopRated,
+          }"
+          @click="handleFilterClick(filter)"
         >
           <component :is="filter.icon" size="16" />
           {{ filter.label }}
@@ -20,46 +25,62 @@
 
 <script setup>
 import { IconSearch, IconWorld, IconMapPin, IconStar } from "@tabler/icons-vue";
-import { ref } from "vue";
+import { useFiltersStore } from "../stores/filters";
+import { storeToRefs } from "pinia";
 
-const activeFilter = ref("");
+const filtersStore = useFiltersStore();
+const { continent, onlyTopRated } = storeToRefs(filtersStore);
 const filters = [
   {
     label: "Todos",
     icon: IconWorld,
     value: "",
+    type: "continent",
   },
   {
     label: "Asia",
     icon: IconMapPin,
     value: "Asia",
+    type: "continent",
   },
   {
     label: "Europa",
     icon: IconMapPin,
     value: "Europe",
+    type: "continent",
   },
   {
     label: "América",
     icon: IconMapPin,
     value: "America",
+    type: "continent",
   },
   {
     label: "Australia",
     icon: IconMapPin,
     value: "Australia",
+    type: "continent",
   },
   {
     label: "África",
     icon: IconMapPin,
-    value: "África",
+    value: "Africa",
+    type: "continent",
   },
   {
     label: "4+ estrellas",
     icon: IconStar,
     value: "4+ estrellas",
+    type: "rating",
   },
 ];
+
+const handleFilterClick = (filter) => {
+  filtersStore.resetFilters();
+  filter.type === "continent"
+    ? filtersStore.setContinent(filter.value)
+    : filtersStore.setOnlyTopRated(true);
+};
 </script>
 
 <style scoped>
