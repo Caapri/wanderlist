@@ -2,7 +2,11 @@
   <section class="filter-bar">
     <div class="search-wrapper">
       <IconSearch size="16" />
-      <input type="search" placeholder="Busca destinos..." />
+      <input
+        type="search"
+        placeholder="Busca destinos..."
+        @input="filtersStore.setSearch($event.target.value)"
+      />
     </div>
     <ul>
       <li v-for="(filter, index) in filters" :key="index">

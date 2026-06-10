@@ -6,6 +6,9 @@
         :key="destination.id"
         :destination="destination"
       />
+      <p v-if="filteredDestinations.length === 0">
+        No se encontraron destinos que coincidan con los filtros aplicados.
+      </p>
     </div>
   </div>
 </template>
