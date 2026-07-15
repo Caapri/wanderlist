@@ -1,17 +1,14 @@
 <template>
-  <div class="destination-card">
+  <div class="destination-card" @click="goToDestinationDetails">
     <img :src="destination.image" :alt="destination.name" />
     <div class="content">
       <h3>{{ destination.name }}</h3>
-      <div class="country">
-        <IconMapPin size="16" />
-        {{ destination.country }}
-        <span
-          class="continent-badge"
-          :style="{ backgroundColor: continentColors[destination.continent] }"
-        >
-          {{ destination.continent }}
-        </span>
+      <div class="location">
+        <div class="country">
+          <IconMapPin size="16" />
+          {{ destination.country }}
+        </div>
+        <ContinentBadge :continent="destination.continent" />
       </div>
       <div class="rating">
         <IconStar
@@ -30,7 +27,10 @@
 
 <script setup>
 import { IconMapPin, IconStar } from "@tabler/icons-vue";
+import { useRouter } from "vue-router";
+import ContinentBadge from "./ui/ContinentBadge.vue";
 
+const router = useRouter();
 const props = defineProps({
   destination: {
     type: Object,
@@ -38,12 +38,11 @@ const props = defineProps({
   },
 });
 
-const continentColors = {
-  Asia: "#1D9E75",
-  Europe: "#534AB7",
-  America: "#50C878",
-  Africa: "#993C1D",
-  Australia: "#FF8C00",
+const goToDestinationDetails = () => {
+  router.push({
+    name: "Destination",
+    params: { id: props.destination.id },
+  });
 };
 </script>
 
@@ -54,6 +53,7 @@ const continentColors = {
   display: flex;
   background-color: var(--surface-color);
   margin-top: 20px;
+  cursor: pointer;
 
   img {
     width: 130px;
@@ -66,7 +66,7 @@ const continentColors = {
   .content {
     margin-left: 1rem;
 
-    .country,
+    .location,
     .rating {
       display: flex;
       align-items: center;
@@ -74,12 +74,8 @@ const continentColors = {
       margin-top: 0.5rem;
     }
 
-    .country > .continent-badge {
-      color: white;
-      padding: 0.1rem 0.4rem;
-      border-radius: 10px;
-      font-size: 0.75rem;
-      margin-left: 0.5rem;
+    .country {
+      margin-right: 5px;
     }
   }
 }

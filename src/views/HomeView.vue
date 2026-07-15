@@ -1,4 +1,5 @@
 <template>
+  <FilterBar />
   <div class="home-layout">
     <div class="destinations-container">
       <DestinationCard
@@ -20,6 +21,7 @@
 import { onMounted } from "vue";
 import { storeToRefs } from "pinia";
 import { useDestinationsStore } from "../stores/destinations";
+import FilterBar from "../components/FilterBar.vue";
 import DestinationCard from "../components/DestinationCard.vue";
 import MapView from "../components/map/MapView.vue";
 
